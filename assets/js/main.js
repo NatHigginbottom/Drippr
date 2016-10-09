@@ -350,3 +350,22 @@
 	});
 
 })(jQuery);
+
+
+$(document).ready(function() {
+	var from = document.location.search.split("=")[1];
+	if(from == "contact") {
+		$("header.major h1").html("Thanks, we'll be in touch soon.");
+	}
+});
+
+
+
+
+
+
+
+
+
+
+
