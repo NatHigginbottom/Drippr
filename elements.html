@@ -46,8 +46,7 @@
 							<li><a href="elements.html">Elements</a></li>
 						</ul>
 						<ul class="actions vertical">
-							<li><a href="#" class="button special fit">Get Started</a></li>
-							<li><a href="#" class="button fit">Log In</a></li>
+							<li><a href="mailto:nat@drippr.co.uk" class="button special fit">Contact Us</a></li>
 						</ul>
 					</nav>
 
@@ -459,19 +458,24 @@ print 'It took ' + i + ' iterations to sort the deck.';
 					<section id="contact">
 						<div class="inner">
 							<section>
-								<form method="post" action="#">
+								<form method="POST" action="https://formspree.io/nat@drippr.co.uk">
 									<div class="field half first">
 										<label for="name">Name</label>
 										<input type="text" name="name" id="name" />
 									</div>
 									<div class="field half">
 										<label for="email">Email</label>
-										<input type="text" name="email" id="email" />
+										<input type="text" name="_replyto" id="email" />
 									</div>
 									<div class="field">
 										<label for="message">Message</label>
 										<textarea name="message" id="message" rows="6"></textarea>
 									</div>
+									
+									<input type="hidden" name="_next" value="http://drippr.co.uk?from=contact">
+									<input type="hidden" name="_subject" value="Submission on DripPR Site">
+									<input type="text" name="_gotcha" style="display:none">
+
 									<ul class="actions">
 										<li><input type="submit" value="Send Message" class="special" /></li>
 										<li><input type="reset" value="Clear" /></li>
@@ -483,23 +487,24 @@ print 'It took ' + i + ' iterations to sort the deck.';
 									<div class="contact-method">
 										<span class="icon alt fa-envelope"></span>
 										<h3>Email</h3>
-										<a href="#">information@untitled.tld</a>
+										<a href="mailto:nat@drippr.co.uk">nat@drippr.co.uk</a>
 									</div>
 								</section>
 								<section>
 									<div class="contact-method">
 										<span class="icon alt fa-phone"></span>
 										<h3>Phone</h3>
-										<span>(000) 000-0000 x12387</span>
+										<span>+44 (0)121-233 0891</span>
 									</div>
 								</section>
 								<section>
 									<div class="contact-method">
 										<span class="icon alt fa-home"></span>
 										<h3>Address</h3>
-										<span>1234 Somewhere Road #5432<br />
-										Nashville, TN 00000<br />
-										United States of America</span>
+										<span>Ludgate House<br />
+										28D Ludgate Hill<br />
+										Birmingham<br />
+										B3 1DX</span>
 									</div>
 								</section>
 							</section>
@@ -510,15 +515,15 @@ print 'It took ' + i + ' iterations to sort the deck.';
 					<footer id="footer">
 						<div class="inner">
 							<ul class="icons">
-								<li><a href="#" class="icon alt fa-twitter"><span class="label">Twitter</span></a></li>
-								<li><a href="#" class="icon alt fa-facebook"><span class="label">Facebook</span></a></li>
-								<li><a href="#" class="icon alt fa-instagram"><span class="label">Instagram</span></a></li>
-								<li><a href="#" class="icon alt fa-github"><span class="label">GitHub</span></a></li>
-								<li><a href="#" class="icon alt fa-linkedin"><span class="label">LinkedIn</span></a></li>
+								<!--<li><a href="#" class="icon alt fa-twitter"><span class="label">Twitter</span></a></li>-->
+								<li><a href="http://www.facebook.com/ruggeddandyco" class="icon alt fa-facebook"><span class="label">Facebook</span></a></li>
+								<li><a href="http://www.instagram.com/ruggeddandyco" class="icon alt fa-instagram"><span class="label">Instagram</span></a></li>
+								<!--<li><a href="#" class="icon alt fa-github"><span class="label">GitHub</span></a></li>
+								<!--<li><a href="#" class="icon alt fa-linkedin"><span class="label">LinkedIn</span></a></li> -->
 							</ul>
 							<ul class="copyright">
-								<li>&copy; Untitled</li>
-								<li>Design: <a href="https://html5up.net">HTML5 UP</a></li>
+								<li>&copy; DripPR 2016</li>
+								<!--<li>Design: <a href="https://html5up.net">HTML5 UP</a></li> -->
 								
 							</ul>
 						</div>

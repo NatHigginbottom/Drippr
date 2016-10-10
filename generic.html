@@ -43,7 +43,7 @@
 							<li><a href="about.html">About Us</a></li>
 						</ul>
 						<ul class="actions vertical">
-							<li><a href="contact.html" class="button special fit">Contact Us</a></li>
+							<li><a href="mailto:nat@drippr.co.uk" class="button special fit">Contact Us</a></li>
 							<!-- <li><a href="#" class="button fit">Log In</a></li> -->
 						</ul>
 					</nav>
@@ -70,19 +70,24 @@
 					<section id="contact">
 						<div class="inner">
 							<section>
-								<form method="post" action="#">
+								<form method="POST" action="https://formspree.io/nat@drippr.co.uk">
 									<div class="field half first">
 										<label for="name">Name</label>
 										<input type="text" name="name" id="name" />
 									</div>
 									<div class="field half">
 										<label for="email">Email</label>
-										<input type="text" name="email" id="email" />
+										<input type="text" name="_replyto" id="email" />
 									</div>
 									<div class="field">
 										<label for="message">Message</label>
 										<textarea name="message" id="message" rows="6"></textarea>
 									</div>
+									
+									<input type="hidden" name="_next" value="http://drippr.co.uk?from=contact">
+									<input type="hidden" name="_subject" value="Submission on DripPR Site">
+									<input type="text" name="_gotcha" style="display:none">
+
 									<ul class="actions">
 										<li><input type="submit" value="Send Message" class="special" /></li>
 										<li><input type="reset" value="Clear" /></li>

@@ -43,7 +43,7 @@
 							<li><a href="about.html">About Us</a></li>
 						</ul>
 						<ul class="actions vertical">
-							<li><a href="contact.html" class="button special fit">Contact Us</a></li>
+							<li><a href="mailto:nat@drippr.co.uk" class="button special fit">Contact Us</a></li>
 							<!-- <li><a href="#" class="button fit">Log In</a></li> -->
 						</ul>
 					</nav>
@@ -55,12 +55,20 @@
 							<section id="one">
 								<div class="inner">
 									<header class="major">
-										<h1>Generic</h1>
+										<h1>About Us</h1>
 									</header>
-									<span class="image main"><img src="images/pic11.jpg" alt="" /></span>
-									<p>Donec eget ex magna. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque venenatis dolor imperdiet dolor mattis sagittis. Praesent rutrum sem diam, vitae egestas enim auctor sit amet. Pellentesque leo mauris, consectetur id ipsum sit amet, fergiat. Pellentesque in mi eu massa lacinia malesuada et a elit. Donec urna ex, lacinia in purus ac, pretium pulvinar mauris. Curabitur sapien risus, commodo eget turpis at, elementum convallis elit. Pellentesque enim turpis, hendrerit.</p>
-									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis dapibus rutrum facilisis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Etiam tristique libero eu nibh porttitor fermentum. Nullam venenatis erat id vehicula viverra. Nunc ultrices eros ut ultricies condimentum. Mauris risus lacus, blandit sit amet venenatis non, bibendum vitae dolor. Nunc lorem mauris, fringilla in aliquam at, euismod in lectus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. In non lorem sit amet elit placerat maximus. Pellentesque aliquam maximus risus, vel sed vehicula.</p>
-									<p>Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque venenatis dolor imperdiet dolor mattis sagittis. Praesent rutrum sem diam, vitae egestas enim auctor sit amet. Pellentesque leo mauris, consectetur id ipsum sit amet, fersapien risus, commodo eget turpis at, elementum convallis elit. Pellentesque enim turpis, hendrerit tristique lorem ipsum dolor.</p>
+									<span class="image main"><img src="images/about.jpg" alt="" /></span>
+									<p>Here’s what we know… 
+
+									<ul><li>Content is king</li>
+										<li>Content is produced in unprecedented volume, with unprecedented speed</li>
+										<li>content is</li>
+										<li>Reaction is inevitable</li>
+										<li>Interaction is essential</li></ul>
+
+									Here’s why: </p>
+									<p>The importance of content and brand engagement is absolutely unprecedented. But so too is the sheer volume of content produced. We live in a bold age where attention spans are shorter and content is everywhere. In this paradoxical digital age where content is as important to success as it is ephemeral in nature, we understand the need to craft bold campaigns that feel impossibly of the moment … yet impossible to forget.
+									But we don’t only care about you or your company. What sets us apart is that fact that our bottom line is and always will be preserving the integrity and unrivalled creativity of the vape community; supporting and sustaining this collective to help everyone soar to new heights.</p>
 								</div>
 							</section>
 
@@ -70,19 +78,24 @@
 					<section id="contact">
 						<div class="inner">
 							<section>
-								<form method="post" action="#">
+								<form method="POST" action="https://formspree.io/nat@drippr.co.uk">
 									<div class="field half first">
 										<label for="name">Name</label>
 										<input type="text" name="name" id="name" />
 									</div>
 									<div class="field half">
 										<label for="email">Email</label>
-										<input type="text" name="email" id="email" />
+										<input type="text" name="_replyto" id="email" />
 									</div>
 									<div class="field">
 										<label for="message">Message</label>
 										<textarea name="message" id="message" rows="6"></textarea>
 									</div>
+									
+									<input type="hidden" name="_next" value="http://drippr.co.uk?from=contact">
+									<input type="hidden" name="_subject" value="Submission on DripPR Site">
+									<input type="text" name="_gotcha" style="display:none">
+
 									<ul class="actions">
 										<li><input type="submit" value="Send Message" class="special" /></li>
 										<li><input type="reset" value="Clear" /></li>
